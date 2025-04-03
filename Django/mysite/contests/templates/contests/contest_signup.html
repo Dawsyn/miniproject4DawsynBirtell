@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'contests/style.css' %}">
+
+<h2>Sign up for "{{ contest.contest_name }}"</h2>
+<p>{{ contest.contest_description }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>

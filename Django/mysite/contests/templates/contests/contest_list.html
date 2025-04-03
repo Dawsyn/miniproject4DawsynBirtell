@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'contests/style.css' %}">
+
+{% if latest_contest_list %}
+    <ul>
+    {% for contest in latest_contest_list %}
+    <li><a href="{% url 'contest_signup' contest.id %}">{{ contest.contest_name }}</a></li>
+    <p>{{ contest.contest_description }}</p>
+
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No contests are available.</p>
+{% endif %}

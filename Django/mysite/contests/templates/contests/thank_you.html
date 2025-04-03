@@ -1,8 +1,30 @@
 {% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mini Project 4</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'polls:index' %}">Polls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contest_list' %}">Contests</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <link rel="stylesheet" href="{% static 'contests/style.css' %}">
 
-<h2>Thank you for entering the contest!</h2>
-<p>We’ve received your entry. Best of luck!</p>
-
-<a href="{% url 'contest_list' %}">← Back to Contest List</a>
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="text-center border rounded p-5 shadow bg-primary text-white" style="max-width: 600px;">
+        <h2 class="mb-3">🎉 Thank you for entering the contest!</h2>
+        <p class="lead">We’ve received your entry. Best of luck!</p>
+        <a href="{% url 'contest_list' %}" class="btn btn-light mt-4">← Back to Contest List</a>
+    </div>
+</div>

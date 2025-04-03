@@ -46,6 +46,4 @@ Code Snippets
 * [ChatGPT](https://chatgpt.com/share/67edd8bb-7680-8002-88ef-9ad3110da19a)
 
 # Notes
-For my ChatGPT, I used images, and the shared link won't work. But for reference I have still added it the acknowledgements.
-
 I added my initial comments to the "mysite\manage.py" file.

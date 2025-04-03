@@ -6,6 +6,11 @@ Mini Project 4 - Django python project
 A simple web app that allows admins to create poll questions,
 answers, and contests. Users are able to answer the questions and enter contesets.
 
+## There are 3 apps
+/admin
+/polls
+/contests
+
 ### Dependencies
 ```
 pip install -r requirements.txt
